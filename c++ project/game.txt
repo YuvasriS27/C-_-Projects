@@ -1,0 +1,44 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    int secretnumber=95;
+    cout<<"* Welcome to Guess the Number Game *"<<"\n";
+    int userguess=0;
+    int usernumber;
+  
+    
+    
+        while (userguess != secretnumber) 
+        {
+            cout<<endl;
+            cout<<"Guess the Number between 1 to 100:";
+             cin>>usernumber;
+             
+            if(usernumber==secretnumber)
+        {
+            cout<<"Congratulations! You Have Guessed Correct Number.";
+            cout<<secretnumber;
+            break;
+        }
+        else if(usernumber<secretnumber && usernumber>=90)
+        {
+            cout<<"Almost You are Guess it *_*. Try Again.";
+            cout<<endl;
+        }
+        else if(usernumber>secretnumber)
+        {
+            cout<<"Your Guess is Ttoo high Guess it";
+            cout<<endl;
+        }
+        else 
+        {
+            cout<<"Sorry! Your Guess is wrong.Try Again...";
+             cout<<endl;
+        }
+     
+        }
+    
+    return 0;
+    
+}
